@@ -1,0 +1,282 @@
+html {
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("/Users/jen/git/Responsive-Portfolio/assets/images/full-bloom.png");
+    margin: 0;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 61px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-row {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    height: 60px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    width: 100vw;
+}
+
+.logo-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.name-logo {
+    background-color:  #4aaaa5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 270px;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    border-right: 1px solid #ccc;
+}
+
+.navbar ul li:last-child {
+    border-right: none;
+}
+
+ul {
+    background-color: #fff;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-align: center;
+    margin: 0 10px;
+    color: #777;
+    text-decoration: none;
+}
+li a:hover {
+    color: #777;
+    text-shadow: 0 1px 0 #ccc;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.content-title {
+    color: #4aaaa5;
+    margin: 20px 0 11px 16px;
+}
+
+.content-titles-area, .content-about, .content-portfolio, .content-form {
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+
+.portrait {
+    float: left;
+    margin: 0 16px 10px 16px; 
+    width: 240px;
+    height: 160px;
+}
+
+h1, h2, .color-text-overlay {
+    color: #fff;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+p {
+    padding: 0 1em 1em 1em;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+hr {
+    height: 1px;
+    margin: 0 16px 16px 16px;
+    background-color: #ccc;
+}
+
+.content-portfolio, .content-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-images {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+img {
+    border-radius: 10px;
+    border: 4px solid #4aaaa5;
+    margin-bottom: 10px;
+}
+
+.color-text-overlay {
+    display: flex;
+    position: absolute;
+    bottom: 35px;
+    background-color: #4aaaa5;
+    width: 280px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .1em;
+}
+
+.color-text-overlay:hover {
+    background-color: #4ac199;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 10px 20px;
+    padding: 5px;
+}
+
+input[type=text] { 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 12px 10px;
+}
+
+input[type=submit] {
+    background-color:  #4aaaa5;
+    color: #fff;
+    font-size: 1em;
+    height: 35px;
+    width: 88px;
+}
+
+input[type=submit]:hover {
+    background-color: #4ac199;
+}
+
+input[type=submit]:active {
+    background-color: rgba(74, 193, 153, .5);
+}
+
+input[id=message] {
+    padding: 75px 0;
+}
+
+.fa-envelope:before {
+    margin: 0 3px;
+}
+
+footer {
+    background-color: #666;
+    border-top: 8px solid #4aaaa5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 980px) {
+     .logo-nav-wrapper {
+        width: 95%;
+        margin-left: 2.5%;
+    } 
+    .content-titles-area, .content-about, .content-portfolio, .content-form {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 768px) {
+    .logo-nav-wrapper {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .content-titles-area, .content-about, .content-portfolio, .content-form {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 640px) {
+    .logo-nav-wrapper {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .content-titles-area, .content-about, .content-portfolio, .content-form {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .logo-nav-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+    .header-row {
+        position: static;
+        height: 121px;
+    }
+
+    .name-logo {
+        width: 100%;
+    }
+    .navbar {
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        position: relative;
+    }
+    .content-titles-area {
+        margin: 0;
+    }
+    .content-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portrait {
+        float: none;
+        width: 90%;
+        height: auto;
+        display: flex;
+    }
+    .content-titles-area, .content-about, .content-portfolio, .content-form {
+        width: 95%;
+    }
+}
