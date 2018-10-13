@@ -276,6 +276,17 @@ footer {
         height: auto;
         display: flex;
     }
+    .content-portfolio {
+        flex-direction: column;
+    }
+    .image-sizing {
+        width: 70%;
+        height: auto;
+    }
+    .color-text-overlay {
+        width: 70%;
+        height: auto;
+    }
     .content-titles-area, .content-about, .content-portfolio, .content-form {
         width: 95%;
     }
