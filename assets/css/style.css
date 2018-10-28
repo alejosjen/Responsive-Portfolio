@@ -85,6 +85,10 @@ a:hover {
     color: #fff;
 }
 
+a.portfolio-links {
+    color: #000;
+}
+
 .content-title {
     color: #4aaaa5;
     margin: 20px 0 11px 16px;
@@ -145,7 +149,7 @@ img {
     position: absolute;
     bottom: 35px;
     background-color: #4aaaa5;
-    width: 280px;
+    width: 284px;
     height: 35px;
     align-items: center;
     justify-content: center;
