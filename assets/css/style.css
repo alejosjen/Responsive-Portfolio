@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-image: url("/Users/jen/git/Responsive-Portfolio/assets/images/full-bloom.png");
+    background-image: url("../images/full-bloom.png");
     margin: 0;
     width: 100%;
     overflow: auto;
