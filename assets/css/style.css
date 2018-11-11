@@ -77,16 +77,12 @@ li a:hover {
 }
 
 a {
-    color: #777;
+    color: #fff;
     text-decoration: none;
 }
 
 a:hover {
     color: #fff;
-}
-
-a.portfolio-links {
-    color: #000;
 }
 
 .content-title {
@@ -106,7 +102,7 @@ a.portfolio-links {
     height: 160px;
 }
 
-h1, h2, .color-text-overlay {
+h1, h2, .color-text-overlay, .portfolio-links {
     color: #fff;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
@@ -144,7 +140,7 @@ img {
     margin-bottom: 10px;
 }
 
-.color-text-overlay {
+.color-text-overlay, .portfolio-links {
     display: flex;
     position: absolute;
     bottom: 35px;
@@ -153,7 +149,6 @@ img {
     height: 35px;
     align-items: center;
     justify-content: center;
-    letter-spacing: .1em;
 }
 
 .color-text-overlay:hover {
@@ -203,6 +198,7 @@ input[id=message] {
 footer {
     background-color: #666;
     border-top: 8px solid #4aaaa5;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,11 +297,9 @@ footer {
         flex-direction: column;
     }
     .image-sizing {
-        width: 70%;
         height: auto;
     }
     .color-text-overlay {
-        width: 70%;
         height: auto;
     }
     .content-titles-area, .content-about, .content-portfolio, .content-form {
